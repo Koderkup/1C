@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<querylist>
+	<query name="Д">
+		<text> ВЫБРАТЬ
+ Д.ШтатнаяДолжность КАК Должность,
+ Д.Действует КАК Действует
+ ИЗ
+ РегистрСведений.СписокДолжностей КАК Д
+ ГДЕ
+ Действует = ЛОЖЬ
+ И
+ Д.Дата &lt;= ДАТАВРЕМЯ(2025,12,31);
+</text>
+		<textSQL>
+
+		</textSQL>
+		<planSQL>
+
+		</planSQL>
+		<typeSQL>
+
+		</typeSQL>
+	</query>
+</querylist>
